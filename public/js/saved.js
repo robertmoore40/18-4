@@ -124,7 +124,7 @@ var initSaved = function () {
         else {
             var $li = $("<li>");
 
-            var title = $("<h5>").text("No Saved Articles. Go To The Home Page and Get Scraping!").addClass("center-align");
+            var title = $("<h5>").text("Go Scrape Some Articles!").addClass("center-align");
 
             $li.append(title);
             $("#savedResults").append($li);
@@ -185,8 +185,8 @@ var deleteSavedArt = function () {
                 var $saves = data.map(function (artic) {
                     var $li = $("<li>");
         
-                    var deleteButton = $("<button>").addClass("buttonMargin btn-small waves-effect waves-light right deleteIt").attr("type", "submit").attr("name", "action").text("Delete From Saved");
-                    var noteButton = $("<button>").addClass("buttonMargin btn-small waves-effect waves-light modal-trigger right indigo addNote").attr("type", "submit").attr("name", "action").text("Add Note").attr("data-target", "modal1");
+                    var deleteButton = $("<button>").addClass("buttonMargin btn-small right deleteIt").attr("type", "submit").attr("name", "action").text("Delete From Saved");
+                    var noteButton = $("<button>").addClass("buttonMargin btn-small modal-trigger right indigo addNote").attr("type", "submit").attr("name", "action").text("Add Note").attr("data-target", "modal1");
         
                     var title = $("<div>").text(artic.title).addClass("collapsible-header");
         
@@ -205,7 +205,7 @@ var deleteSavedArt = function () {
             else {
                 var $li = $("<li>");
     
-                var title = $("<h5>").text("No Saved Articles. Go To The Home Page and Get Scraping!").addClass("center-align");
+                var title = $("<h5>").text("Go Scrape some Articles!!").addClass("center-align");
     
                 $li.append(title);
                 $("#savedResults").append($li);

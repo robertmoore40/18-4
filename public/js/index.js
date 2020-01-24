@@ -103,7 +103,7 @@ var newScrape = function () {
             else {
                 var $li = $("<li>");
     
-                var title = $("<h5>").text("No More Articles. Get Scraping By Clicking The Button Above!").addClass("center-align");
+                var title = $("<h5>").text("Scrape by clicking the button above!").addClass("center-align");
     
                 $li.append(title);
                 $("#scrapeResults").append($li);
@@ -135,7 +135,7 @@ var deleteAllScraped = function () {
             else {
                 var $li = $("<li>");
     
-                var title = $("<h5>").text("No More Articles. Get Scraping By Clicking The Button Above!").addClass("center-align");
+                var title = $("<h5>").text("Scrape By Clicking The Button Above!").addClass("center-align");
     
                 $li.append(title);
                 $("#scrapeResults").append($li);
